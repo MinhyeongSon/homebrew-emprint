@@ -1,19 +1,19 @@
 cask "emprint" do
-  version "0.2.9"
+  version "0.2.10"
 
   on_arm do
-    sha256 "ef1e9466c28090e61e0f4cf4b28e7103678c097c8fc7222f23974e66071340ba"
-    url "https://github.com/MinhyeongSon/emprint-release/releases/download/v0.2.9/Emprint-0.2.9-mac-arm64.zip"
+    sha256 "4377432f4d42f4a9c440dcb5f7761cdd924805c8f6d51cb2ead237d47065cb6e"
+    url "https://github.com/devminson/emprint-release/releases/download/v0.2.10/Emprint-0.2.10-mac-arm64.zip"
   end
 
   on_intel do
-    sha256 "0c2bcf5b43d23eccc92eeee3278ee8a9f5f685b68febc71fb620a13cd0fe84e5"
-    url "https://github.com/MinhyeongSon/emprint-release/releases/download/v0.2.9/Emprint-0.2.9-mac-x64.zip"
+    sha256 "478f4963d131fc842dd537c054a8c732f6317277690521b897a38c7861a6ae23"
+    url "https://github.com/devminson/emprint-release/releases/download/v0.2.10/Emprint-0.2.10-mac-x64.zip"
   end
 
   name "Emprint"
   desc "Local-first, Git-native workspace runtime for creators"
-  homepage "https://minhyeongson.github.io/emprint-home/"
+  homepage "https://devminson.github.io/emprint-home/"
 
   app "Emprint.app"
 
