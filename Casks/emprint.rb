@@ -2,12 +2,12 @@ cask "emprint" do
   version "0.2.8"
 
   on_arm do
-    sha256 "25a7fafb53766cca87dd5f75cef923eedf014beab5229eb384c85626855dc267"
+    sha256 "18a5063fbdc5a34c23663f5ca81035f83f6e5fd86c5a6461b0fa8746da05deb8"
     url "https://github.com/MinhyeongSon/emprint-release/releases/download/v0.2.8/Emprint-0.2.8-mac-arm64.zip"
   end
 
   on_intel do
-    sha256 "ef0d4dfc20b22a59a00e320abdde58c526238e55ce72c406875b3b43747bf8b6"
+    sha256 "8e5c3348b4f5abf4d479e959f6f5ef980426144c609684d558d36b8ae1fafa9b"
     url "https://github.com/MinhyeongSon/emprint-release/releases/download/v0.2.8/Emprint-0.2.8-mac-x64.zip"
   end
 
