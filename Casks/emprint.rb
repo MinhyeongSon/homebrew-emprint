@@ -2,12 +2,12 @@ cask "emprint" do
   version "0.2.8"
 
   on_arm do
-    sha256 "18a5063fbdc5a34c23663f5ca81035f83f6e5fd86c5a6461b0fa8746da05deb8"
+    sha256 "d813e337aedb8eb83ccaca5ff8a6f037ac3dcf0e6aa6221d463df4e204d1116f"
     url "https://github.com/MinhyeongSon/emprint-release/releases/download/v0.2.8/Emprint-0.2.8-mac-arm64.zip"
   end
 
   on_intel do
-    sha256 "8e5c3348b4f5abf4d479e959f6f5ef980426144c609684d558d36b8ae1fafa9b"
+    sha256 "9890514e4ccf075c3a9d6ef8614c88db8d87660beb64a5cf03d083792ccae80a"
     url "https://github.com/MinhyeongSon/emprint-release/releases/download/v0.2.8/Emprint-0.2.8-mac-x64.zip"
   end
 
@@ -16,6 +16,15 @@ cask "emprint" do
   homepage "https://minhyeongson.github.io/emprint-home/"
 
   app "Emprint.app"
+
+  # Casks use postflight (not formula post_install). Re-sign after install for unsigned builds.
+  postflight do
+    app = "#{appdir}/Emprint.app"
+    system_command "/usr/bin/xattr",
+                      args: ["-dr", "com.apple.quarantine", app]
+    system_command "/usr/bin/codesign",
+                      args: ["--force", "--deep", "--sign", "-", app]
+  end
 
   caveats <<~EOS
     Emprint requires Node.js 22+ for Design preview (npm run dev).
