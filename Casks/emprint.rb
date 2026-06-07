@@ -1,14 +1,14 @@
 cask "emprint" do
-  version "0.2.10"
+  version "0.3.0"
 
   on_arm do
-    sha256 "4377432f4d42f4a9c440dcb5f7761cdd924805c8f6d51cb2ead237d47065cb6e"
-    url "https://github.com/devminson/emprint-release/releases/download/v0.2.10/Emprint-0.2.10-mac-arm64.zip"
+    sha256 "62ce87ff517581a0fe481589726fdc8c6871108d40608c8a0c21b3a47f6edc9c"
+    url "https://github.com/devminson/emprint-release/releases/download/v0.3.0/Emprint-0.3.0-mac-arm64.zip"
   end
 
   on_intel do
-    sha256 "478f4963d131fc842dd537c054a8c732f6317277690521b897a38c7861a6ae23"
-    url "https://github.com/devminson/emprint-release/releases/download/v0.2.10/Emprint-0.2.10-mac-x64.zip"
+    sha256 "08447c17192d2a45466aa1610b7d578cc73cbce5565faeda261480a31cd517b6"
+    url "https://github.com/devminson/emprint-release/releases/download/v0.3.0/Emprint-0.3.0-mac-x64.zip"
   end
 
   name "Emprint"
